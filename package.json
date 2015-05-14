@@ -1,0 +1,31 @@
+{
+  "name": "emptyexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "chai": "^2.3.0",
+    "grunt": "^0.4.5",
+    "grunt-express-server": "^0.5.1",
+    "grunt-mocha-casperjs": "^1.4.4",
+    "mocha": "^2.2.4",
+    "mocha-casperjs": "^0.5.3",
+    "mustache-express": "^1.2.1",
+    "phantomjs": "^1.9.15"
+  },
+  "dependencies": {
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "ejs": "^2.2.4",
+    "express": "^4.11.2",
+    "mocha-casperjs": "^0.5.3",
+    "mustache-express": "^1.2.1"
+  }
+}
