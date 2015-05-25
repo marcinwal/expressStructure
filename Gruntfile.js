@@ -2,6 +2,13 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    karma: {
+      unit:{
+        configFile: 'karma.conf.js',
+        background: true,
+        singleRun: false
+      }
+    },
     mocha_casperjs: {
       options: {
       },
@@ -34,6 +41,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-mocha-casperjs');
   grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('grunt-karma');  
 
-  grunt.registerTask('default', ['express:test', 'mocha_casperjs']);
+  grunt.registerTask('default', ['express:test', 'mocha_casperjs','karma']);
 };

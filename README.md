@@ -4,3 +4,4 @@ run:
 npm init
 npm install
 grunt    //should run tests as well 
+karma start
