@@ -5,8 +5,7 @@ module.exports = function(grunt) {
     karma: {
       unit:{
         configFile: 'karma.conf.js',
-        background: true,
-        singleRun: false
+        singleRun: true
       }
     },
     mocha_casperjs: {
@@ -43,5 +42,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-karma');  
 
-  grunt.registerTask('default', ['express:test', 'mocha_casperjs','karma']);
+  grunt.registerTask('default', ['express:test', 'mocha_casperjs','karma:unit']);
 };
